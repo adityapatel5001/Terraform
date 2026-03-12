@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_instance" "example" {
   ami           = "ami-06e3c045d79fd65d9"
   instance_type = "t3.micro"
-  key_name      = "my-key-pair"
+  key_name      = "my-key-pair-new"
 
   tags = {
     Name = "AppNode1_test1"
