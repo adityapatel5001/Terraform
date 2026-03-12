@@ -13,7 +13,7 @@ resource "aws_instance" "example" {
 
 
   tags = {
-    Name = "AppNode1"
+    Name = "AppNode1_test"
   }
 
 provider "aws" {
