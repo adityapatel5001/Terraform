@@ -8,6 +8,6 @@ resource "aws_instance" "example" {
   key_name      = "my-key-pair"
 
   tags = {
-    Name = "AppNode1_test"
+    Name = "AppNode1_test1"
   }
 }
