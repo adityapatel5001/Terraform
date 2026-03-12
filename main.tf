@@ -2,12 +2,9 @@ provider "aws" {
   region = "us-east-2"
 }
 
-resource "aws_instance" "example" {
-  ami           = "ami-06e3c045d79fd65d9"
-  instance_type = "t3.micro"
-  key_name      = "my-key-pair-test"
+resource "aws_ec2_tag" "jenkins_tag" {
+  resource_id = "i-0889a7d6d1ba42973"
 
-  tags = {
-    Name = "AppNode1_testn"
-  }
+  key   = "Name"
+  value = "Jenkins_Test_Tag"
 }
