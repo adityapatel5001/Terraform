@@ -14,7 +14,7 @@ module "ec2_instance" {
   instance_type = "t3.micro"
   key_name      = "user1"
   monitoring    = true
-  subnet_id     = "subnet-eddcdzz4"
+  subnet_id     = "subnet-0c900516d8719d873"
 
   tags = {
     Terraform   = "true"
