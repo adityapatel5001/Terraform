@@ -12,8 +12,7 @@ module "ec2_instance" {
   name = "instance-${each.key}"
 
   instance_type = "t3.micro"
-  key_name      = "user1"
-  monitoring    = true
+  key_name      = "my-key-pair"
   subnet_id     = "subnet-0c900516d8719d873"
 
   tags = {
